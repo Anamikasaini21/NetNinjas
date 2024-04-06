@@ -19,8 +19,8 @@ function logSubmit(event) {
   const options = {
     method: "POST",
     headers: {
-     'X-RapidAPI-Key': 'e1644592aemshee05cc42095b149p18d88fjsn76ed55d7213d',
-		'X-RapidAPI-Host': 'virtual-try-on2.p.rapidapi.com'
+      'X-RapidAPI-Key': '9e6b36bf4dmshd72ea913fac4e08p114e85jsn2d125e094240',
+      'X-RapidAPI-Host': 'virtual-try-on2.p.rapidapi.com'
     },
     body: dataSend,
   };
