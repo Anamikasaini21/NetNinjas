@@ -44,14 +44,7 @@ function logSubmit(event) {
         //  const ur='"'+u+'"';
         let d=document.querySelector("#res");
         d.setAttribute("src",u);
-        var imageUrl =u; // Get the URL of the image from the link's href attribute
-
-        // var img = new Image();
-        // img.onload = function() {
-        //   document.getElementById("imageContainer").appendChild(img);
-        // };
-        // img.src = imageUrl;
-        // console.log(img.src)
+        var imageUrl =u; 
       
       });
       
