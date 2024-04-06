@@ -97,14 +97,20 @@ header{
 .header-nav-list a:hover::after{
     width: 100%;
 }
-.donate-btn-header{
+.try-btn-header{
     background-color: transparent;
     font-size: 1.6rem;
     padding: 0.5em;
     border-radius: 30px;
     border: 2px solid var(--pure-white-shade);
     color: var(--pure-white-shade);
+    box-shadow: 0 8px 16px 0 rgba(196, 241, 31, 0.2), 0 6px 20px 0 rgba(202, 239, 52, 0.19);
 }
+
+.try-btn-header a{
+    color: #ffffff;
+}
+
 .try-btn-header:hover{
     background-color: var(--hover-color);
 }
