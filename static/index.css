@@ -1,10 +1,9 @@
-:root{
-    /* --dark-blue-shade:rgb(218, 114, 178) ; */
-    --dark-blue-shade:hsl(300, 52%, 4%) ;
+:root {
+    --dark-blue-shade: hsl(300, 52%, 4%);
     --light-blue-shade: #ffddd2;
     --dark-text-color: navy;
     --hover-color: rgb(40, 129, 154);
-    --largest-breakpoint : 1500px;
+    --largest-breakpoint: 1500px;
     --medium-breakpoint: 900px;
     --smallest-breakpoint: 400px;
     --pure-white-shade: #FFFFFF;
@@ -12,7 +11,7 @@
     --medium-font-size: 1.5rem;
     --small-font-size: 1rem;
     --large-font-size: 2rem;
-   
+
 }
 
 html {
@@ -20,23 +19,24 @@ html {
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: serif;
     list-style: none;
     text-decoration: none;
-    
-}
-body{
-    width: 100%;
-    min-height: 1500px;
-    
+
 }
 
-header{
-    
+body {
+    width: 100%;
+    min-height: 1500px;
+
+}
+
+header {
+
     background-color: var(--dark-blue-shade);
     display: flex;
     justify-content: center;
@@ -48,35 +48,39 @@ header{
     left: 0;
     width: 100%;
     border-bottom: 2px solid var(--light-blue-shade);
-    
-    
+
+
 }
-.container{
+
+.container {
     width: 90%;
 }
-.header-container{
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height:150px;
+    height: 150px;
 }
-.logo h1{
+
+.logo h1 {
     color: var(--pure-white-shade);
     font-size: var(--largest-font-size);
 }
 
-.header-logo{
+.header-logo {
     display: flex;
     align-items: center;
 }
 
-.header-nav-list{
+.header-nav-list {
     width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.header-nav-list a{
+
+.header-nav-list a {
     font-size: var(--large-font-size);
     font-family: 500;
     color: var(--pure-white-shade);
@@ -84,7 +88,7 @@ header{
 }
 
 
-.header-nav-list a::after{
+.header-nav-list a::after {
     content: "";
     width: 0;
     height: 3px;
@@ -94,10 +98,12 @@ header{
     bottom: -10px;
     transition: 0.3s ease;
 }
-.header-nav-list a:hover::after{
+
+.header-nav-list a:hover::after {
     width: 100%;
 }
-.try-btn-header{
+
+.try-btn-header {
     background-color: transparent;
     font-size: 1.6rem;
     padding: 0.5em;
@@ -107,20 +113,21 @@ header{
     box-shadow: 0 8px 16px 0 rgba(196, 241, 31, 0.2), 0 6px 20px 0 rgba(202, 239, 52, 0.19);
 }
 
-.try-btn-header a{
+.try-btn-header a {
     color: #ffffff;
 }
 
-.try-btn-header:hover{
+.try-btn-header:hover {
     background-color: var(--hover-color);
 }
-main{
+
+main {
     padding-top: 95px;
     width: 100%;
     margin-top: 100px;
 }
 
-.main-div1{
+.main-div1 {
     width: 100%;
     background-color: var(--light-blue-shade);
     min-height: 600px;
@@ -131,177 +138,183 @@ main{
     margin-top: 1px;
 }
 
-.main-div1-image{
+.main-div1-image {
     border: 3px solid var(--dark-blue-shade);
     background-image: url(../resources/white-child-in-cold.png);
-    background-position:left;
+    background-position: left;
     background-size: cover;
     width: 550px;
     height: 550px;
     border-radius: 50%;
-    
+
 }
 
-.main-div1-container{
+.main-div1-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.main-div1-text{
+.main-div1-text {
     width: 60%;
     color: var(--dark-blue-shade);
     line-height: 1.2;
 }
-.main-div1-text h1{
+
+.main-div1-text h1 {
     font-size: var(--largest-font-size);
 }
-.main-div1-text p{
+
+.main-div1-text p {
     font-size: var(--large-font-size);
 }
-.donate-btn-main, .go-to-refugee-page-btn{
+
+.donate-btn-main,
+.go-to-refugee-page-btn {
     font-size: 1.8rem;
     padding: 0.4em;
-    
-    
+
+
     border-radius: 40px;
     border: 2px solid var(--dark-blue-shade);
 }
 
-.go-to-refugee-page-btn{
+.go-to-refugee-page-btn {
     color: var(--dark-blue-shade);
     background-color: transparent;
-    
+
 }
 
-.donate-btn-main{
+.donate-btn-main {
     color: white;
     background-color: var(--dark-blue-shade);
     margin-right: 4rem;
 }
 
-.go-to-refugee-page-btn:hover{
+.go-to-refugee-page-btn:hover {
     background-color: var(--dark-blue-shade);
     color: white;
 }
-.donate-btn-main:hover{
+
+.donate-btn-main:hover {
     background-color: var(--hover-color);
 }
 
-.main-div2{
+.main-div2 {
     width: 100%;
     display: flex;
     justify-content: center;
     min-height: 650px;
     background-image: url(https://t4.ftcdn.net/jpg/05/96/62/65/360_F_596626503_jrzjZNYStDexiWxQFqO7oCh6M8PdMlJs.jpg);
-    background-size:cover;
+    background-size: cover;
 
 }
 
-.main-div2-container{
+.main-div2-container {
     display: flex;
-    justify-content:space-between;
-    
+    justify-content: space-between;
+
     align-items: center;
 
 }
 
-.main-div2-image{
+.main-div2-image {
     width: 520px;
     height: 520px;
-    
+
     border-radius: 50%;
     border: 10px solid var(--light-blue-shade);
     background-image: url(../resources/refugee-women.png);
-    background-position:left;
+    background-position: left;
     background-size: cover;
 }
 
-.main-div2-text{
+.main-div2-text {
     color: var(--dark-blue-shade);
     width: 60%;
     color: white;
 }
 
-.main-div2-text h1{
+.main-div2-text h1 {
     font-size: var(--largest-font-size);
     color: white;
 }
 
-.main-div2-text p{
+.main-div2-text p {
     font-size: var(--large-font-size);
     color: white;
 }
 
-.our-services-btn{
+.our-services-btn {
     background-color: var(--dark-blue-shade);
     color: white;
     font-size: 1.8rem;
     padding: 0.5em;
     border-radius: 40px;
     margin-right: 4rem;
-    /* border: 2px solid var(--dark-blue-shade); */
     border: 2px solid white;
     color: white;
 }
 
-.about-us-btn{
+.about-us-btn {
     font-size: 1.8rem;
     padding: 0.5em;
     color: var(--dark-blue-shade);
-    /* border: 3px solid var(--dark-blue-shade); */
-    border:3px solid white;
+    border: 3px solid white;
     background-color: transparent;
     border-radius: 40px;
     color: white;
 }
-.our-services-btn:hover{
+
+.our-services-btn:hover {
     background-color: var(--hover-color);
 }
-.about-us-btn:hover{
+
+.about-us-btn:hover {
     background-color: var(--dark-blue-shade);
     color: white;
 }
 
-.main-div3{
+.main-div3 {
     display: flex;
     background-color: var(--light-blue-shade);
     width: 100%;
     justify-content: center;
-    justify-content:space-between;
+    justify-content: space-between;
     min-height: 700px;
     margin-top: 30px;
 }
 
-.main-div3-container{
-    margin-left: 50px;
+.main-div3-container {
+    margin-left: 5px;
     position: relative;
     width: 90%;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
 }
 
-.main-div3-container h1{
+.main-div3-container h1 {
     font-size: var(--largest-font-size);
     position: absolute;
     top: 30px;
     left: 42%;
     color: var(--dark-blue-shade);
-    
+
 }
 
-.main-div3-container a{
+.main-div3-container a {
     width: 25%;
     min-height: 400px;
-    
+
 }
-.ngo{
+
+.ngo {
     border: 2px solid var(--dark-blue-shade);
     min-height: 500px;
     /* width: 100%; */
-    width:500px;
-    
+    width: 500px;
+
     background-color: var(--dark-blue-shade);
     display: flex;
     flex-direction: column;
@@ -311,18 +324,19 @@ main{
     overflow: hidden;
     color: white;
 }
-.ngo:hover{
+
+.ngo:hover {
     background-color: rgb(40, 129, 154);
 }
 
-.ngo-description{
+.ngo-description {
     text-align: center;
     font-size: 1.6rem;
     padding: 5px;
 }
 
-.ngo1-logo{
-    
+.ngo1-logo {
+
     background-image: url(https://img.freepik.com/premium-photo/technologies-business-beauty-lifestyle-concept-portrait-young-beauty-woman-doing-selfie-grey-background_222877-8862.jpg);
     width: 100%;
     min-height: 510px;
@@ -330,14 +344,15 @@ main{
     background-size: cover;
 }
 
-.ngo2-logo{
+.ngo2-logo {
     background-image: url(https://t3.ftcdn.net/jpg/04/98/91/68/360_F_498916834_PNImIswBYq2UKjdxHhuwUkP0K1AAbq33.jpg);
     width: 100%;
     min-height: 510px;
     background-position: center;
     background-size: cover;
 }
-.ngo3-logo{
+
+.ngo3-logo {
     background-image: url(https://img.freepik.com/free-photo/adorable-young-blond-girl-posing-against-white-wall_176420-32803.jpg);
     width: 100%;
     min-height: 510px;
@@ -348,180 +363,202 @@ main{
 
 
 
-.footer-icons{
+.footer-icons {
     color: white;
     font-size: var(--largest-font-size);
 }
 
 
-@media (width <= 1500px) and (width > 1000px){
-    html{
+@media (width <=1500px) and (width > 1000px) {
+    html {
         font-size: 67%;
     }
-    .main-div1{
+
+    .main-div1 {
         min-height: 500px;
     }
-    .main-div1-image{
+
+    .main-div1-image {
         width: 450px;
         height: 450px;
     }
-    .main-div2{
+
+    .main-div2 {
         min-height: 500px;
     }
-    .main-div2-image{
+
+    .main-div2-image {
         width: 420px;
         height: 420px;
 
     }
-    .main-div2-text{
+
+    .main-div2-text {
         width: 50%;
     }
-    .main-div3-container a{
+
+    .main-div3-container a {
         width: 30%;
     }
-    .ngo{
+
+    .ngo {
         min-height: 350px;
     }
 }
-@media (width <= 1000px) and (width > 750px){
-    html{
+
+@media (width <=1000px) and (width > 750px) {
+    html {
         font-size: 67%;
     }
-    .main-div1{
+
+    .main-div1 {
         min-height: 400px;
     }
-    .header-nav-list, .donate-btn-header{
+
+    .header-nav-list,
+    .donate-btn-header {
         display: none;
     }
-    .main-div1-image{
+
+    .main-div1-image {
         margin: 10px;
         width: 380px;
         height: 380px;
     }
-    .main-div2{
+
+    .main-div2 {
         min-height: 400px;
     }
-    .main-div2-image{
+
+    .main-div2-image {
         width: 350px;
         height: 350px;
 
     }
-    .main-div2-text{
+
+    .main-div2-text {
         width: 50%;
     }
-    .main-div3{
+
+    .main-div3 {
         min-height: 600px;
     }
-    
-    .main-div3-container a{
+
+    .main-div3-container a {
         width: 45%;
-        
-        
+
+
     }
-    .ngo{
+
+    .ngo {
         min-height: 350px;
     }
-    .ngo3-a{
+
+    .ngo3-a {
         display: none;
     }
 }
 
+.cardska {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    margin-top: 50px;
+
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+}
+
+.card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #666;
+}
+
+.card:hover {
+    transform: scale(1.2);
+}
 
 
-
-
-     .cardska{
-        display:flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color:white;
-        margin-top: 50px;
-
-     }
-    
-    .card {
-      width: 350px;
-      height:500px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      margin: 20px;
-      
-    }
-
-    .card img {
-      width: 100%;
-      height: 380px;
-      object-fit: cover;
-    }
-
-    .card-content {
-      padding: 20px;
-    }
-
-    .card-title {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-
-    .card-description {
-      font-size: 1rem;
-      color: #666;
-    }
-  
-    .card:hover{
-        transform:scale(1.2);
-    }
-
-    
-.footer{
+.footer {
     background-color: black;
     padding: 70px 0;
     color: white;
-    width:100%;
-    
+    width: 100%;
+
 
 }
-.footer-container{
-    margin:auto;
+
+.footer-container {
+    margin: auto;
     color: #ffffff;
 }
-ul{
+
+ul {
     list-style: none;
     color: #ffffff;
 }
-.row{
-    display:flex;
-    flex-wrap:wrap;
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
-.footer-col{
-    width:25%;
-    padding:0 15px;
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
 }
-.footer-col h4{
+
+.footer-col h4 {
     font-size: 30px;
-    color:#ffffff;
+    color: #ffffff;
     text-transform: capitalize;
-    margin-bottom:30px;
+    margin-bottom: 30px;
     font-weight: 500;
     position: relative;
 
 }
-.footer-col h4::before{
-    content:'';
-    position:absolute;
-    left:0;
-    bottom:-10px;
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
     background-color: #e91e63;
-    height:2px;
-    box-sizing:border-box;
-    width:50px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
 }
 
-.footer-col ul li:not(:last-child){
+.footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
 }
-.footer-col ul li a{
+
+.footer-col ul li a {
     font-size: 18px;
     text-transform: capitalize;
     color: #ffffff;
@@ -532,7 +569,7 @@ ul{
         flex-direction: column;
         align-items: center;
     }
-    
+
     .card {
         width: 80%;
         max-width: 350px;

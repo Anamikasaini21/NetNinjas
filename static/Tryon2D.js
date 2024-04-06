@@ -6,12 +6,12 @@ function logSubmit(event) {
 
   console.log(event.target)
   const files = [...(data.entries())];
-  console.log("data",(data.entries()))
+  console.log("data", (data.entries()))
   console.log(files)
   const person = files[0][1];
   const clothes = files[1][1];
   console.log(person);
-  
+
   const dataSend = new FormData();
   dataSend.append("personImage", person);
   dataSend.append("clothImage", clothes);
@@ -52,10 +52,10 @@ function logSubmit(event) {
         var imageUrl =u; 
         
       });
-      
-        console.log("url is printed");
 
-      console.log("call request end");
+    console.log("url is printed");
+
+    console.log("call request end");
   } catch (error) {
     console.error(error);
     let er=document.getElementById("msg");
