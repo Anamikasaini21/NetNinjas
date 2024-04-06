@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Page</title>
+    <link rel="stylesheet" href="unity.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <img src="logo.jpeg" alt="">
+            <a href="#" class="header-logo logo"><img src="../resources/heart-in-hands-svgrepo-com.svg" alt="">
+                <h1>UnityAid</h1>
+            </a>
+            <ul class="nav-list header-nav-list">
+                <li class="list-items"><a href="../index.html">Home</a></li>
+                <li class="list-items"><a href="../about/about.html">About</a></li>
+                <li class="list-items"><a href="../refugee page/refugee_page.html">Refugee Page</a></li>
+                <li class="list-items"><a href="../kit/kit1.html">Kit</a></li>
+                <li class="list-items"><a href="../servicePage/servicePage.html">Services</a></li>
+            </ul>
+            <button class="donate-btn-header">Donate Now</button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="main main1">
+                <div class="bg_main1"></div>
+                <div class="main1_text">
+                    <h1>DONATE</h1>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bootcards">
+                <h1>Your Donation will provide...</h1>
+                <div class="cdd">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="../resources/food.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">$ 10</h5>
+                                <p class="card-text">Nutritious Meal</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="../resources/hygein.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">$ 20</h5>
+                                <p class="card-text">Hygiene Kit</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="../resources/blanket1.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">$ 30</h5>
+                                <p class="card-text">Warm Blanket</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="../resources/book.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">$ 50</h5>
+                                <p class="card-text">Education Supplies</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="../resources/shelter1.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">$ 75</h5>
+                                <p class="card-text">Shelter Assistance</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="../resources/health.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">$ 100</h5>
+                                <p class="card-text">Medical Care</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="donform">
+            <div class="block2">
+            <h1 class="form_heading">Donation Request Form</h1>
+                <div class="form-container">
+                    <form action="">
+                            <label for="text">Full Name:</label>
+                            
+                        <div class="twoinone">
+                            <input type="text" id="don1" placeholder="First" required>
+                            <input type="text" id="don2" placeholder="Last">
+                        </div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+                        <label for="amount">Donation Amount:</label>
+                        <input type="number" id="amount" name="amount" min="1" required>
+                        <label for="currency">Currency:</label>
+                        <select id="currency" name="currency">
+                            <option value="USD">USD - United States Dollar</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="GBP">GBP - British Pound Sterling</option>
+                            <option value="AUD">AUD - Australian Dollar</option>
+                            <option value="CAD">CAD - Canadian Dollar</option>
+                            <option value="JPY">JPY - Japanese Yen</option>
+                            <option value="CHF">CHF - Swiss Franc</option>
+                            <option value="CNY">CNY - Chinese Yuan</option>
+                        </select>
+                        <label for="purpose">Donation Purpose:</label>
+                        <select id="purpose" name="purpose">
+                            <option value="general">General Donation</option>
+                            <option value="food">Food</option>
+                            <option value="education">Education</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="shelter">Shelter Assistance</option>
+                            <option value="emergency">Emergency Relief</option>
+                        </select>
+                        <label for="payment">Payment Method:</label>
+                        <select id="payment" name="payment" required>
+                            <option value="creditcard">Credit/Debit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="banktransfer">Bank Transfer</option>
+                        </select>
+
+                        <button type="submit">Donate Now</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-container">
+            <div class="icons">
+                <a href="" class="fb-icon footer-icons"><i class="bx bxl-facebook-square"></i></a>
+                <a href="" class="twitter-icon footer-icons"><i class="bx bxl-twitter"></i></a>
+                <a href="" class="insta-icon footer-icons"><i class="bx bxl-instagram"></i></a>
+                <a href="" class="youtube-icon footer-icons"><i class="bx bxl-youtube"></i></a>
+            </div>
+            <div class="footer-nav-items">
+                <a href="./about/about.html">About</a>
+                <a href="">Services</a>
+                <a href="./refugee page/refugee_page.html">Refugee Page</a>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
