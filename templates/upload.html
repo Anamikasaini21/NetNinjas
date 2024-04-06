@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Upload</title>
     <style>
-        :root {
+        :root{
             /* --dark-blue-shade:rgb(218, 114, 178) ; */
-            --dark-blue-shade: hsl(300, 52%, 4%);
+            --dark-blue-shade:hsl(300, 52%, 4%) ;
             --light-blue-shade: #ffddd2;
             --dark-text-color: navy;
             --hover-color: rgb(40, 129, 154);
-            --largest-breakpoint: 1500px;
+            --largest-breakpoint : 1500px;
             --medium-breakpoint: 900px;
             --smallest-breakpoint: 400px;
             --pure-white-shade: #FFFFFF;
@@ -20,7 +20,7 @@
             --medium-font-size: 1.5rem;
             --small-font-size: 1rem;
             --large-font-size: 2rem;
-
+        
         }
 
         html {
@@ -28,24 +28,23 @@
         }
 
 
-        * {
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: serif;
             list-style: none;
             text-decoration: none;
-
+            
         }
-
-        body {
+        body{
             width: 100%;
             min-height: 750x;
-
+            
         }
 
-        header {
-
+        header{
+            
             background-color: var(--dark-blue-shade);
             display: flex;
             justify-content: center;
@@ -57,39 +56,35 @@
             left: 0;
             width: 100%;
             border-bottom: 2px solid var(--light-blue-shade);
-
-
+            
+            
         }
-
-        .container {
+        .container{
             width: 90%;
         }
-
-        .header-container {
+        .header-container{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 150px;
+            height:150px;
         }
-
-        .logo h1 {
+        .logo h1{
             color: var(--pure-white-shade);
             font-size: var(--largest-font-size);
         }
 
-        .header-logo {
+        .header-logo{
             display: flex;
             align-items: center;
         }
 
-        .header-nav-list {
+        .header-nav-list{
             width: 50%;
             display: flex;
             justify-content: space-around;
             align-items: center;
         }
-
-        .header-nav-list a {
+        .header-nav-list a{
             font-size: var(--medium-font-size);
             font-family: 500;
             color: var(--pure-white-shade);
@@ -97,7 +92,7 @@
         }
 
 
-        .header-nav-list a::after {
+        .header-nav-list a::after{
             content: "";
             width: 0;
             height: 3px;
@@ -107,12 +102,10 @@
             bottom: -10px;
             transition: 0.3s ease;
         }
-
-        .header-nav-list a:hover::after {
+        .header-nav-list a:hover::after{
             width: 100%;
         }
-
-        .try-btn-header {
+        .try-btn-header{
             background-color: transparent;
             font-size: 1.6rem;
             padding: 0.5em;
@@ -122,19 +115,17 @@
             box-shadow: 0 8px 16px 0 rgba(196, 241, 31, 0.2), 0 6px 20px 0 rgba(202, 239, 52, 0.19);
         }
 
-        .try-btn-header a {
+        .try-btn-header a{
             color: #ffffff;
         }
 
-        .try-btn-header:hover {
+        .try-btn-header:hover{
             background-color: var(--hover-color);
         }
-
-        .mainContainer {
-            margin-top: 220px;
+        .mainContainer{
+              margin-top: 220px;
 
         }
-
         .cont1 {
             max-width: 600px;
             margin: 0 auto;
@@ -238,6 +229,67 @@
             text-transform: capitalize;
             color: #ffffff;
         }
+
+        .upl {
+            width: 50px;
+        }
+
+        .footer-icons{
+    color: white;
+    font-size: var(--largest-font-size);
+}
+.footer{
+    background-color: black;
+    padding: 70px 0;
+    color: white;
+    width:100%;
+    margin-top: 100px;
+
+}
+.footer-container{
+    margin:auto;
+    color: #ffffff;
+}
+ul{
+    list-style: none;
+    color: #ffffff;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+.footer-col{
+    width:25%;
+    padding:0 15px;
+}
+.footer-col h4{
+    font-size: 30px;
+    color:#ffffff;
+    text-transform: capitalize;
+    margin-bottom:30px;
+    font-weight: 500;
+    position: relative;
+
+}
+.footer-col h4::before{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    background-color: #e91e63;
+    height:2px;
+    box-sizing:border-box;
+    width:50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #ffffff;
+}
     </style>
 </head>
 
