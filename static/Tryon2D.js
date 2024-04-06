@@ -1,6 +1,7 @@
-
 function logSubmit(event) {
   event.preventDefault();
+  let load=document.getElementById("loader");
+  load.style.display='block';
   const data = new FormData(event.target);  
 
   console.log(event.target)
@@ -19,7 +20,7 @@ function logSubmit(event) {
   const options = {
     method: "POST",
     headers: {
-      'X-RapidAPI-Key': '9e6b36bf4dmshd72ea913fac4e08p114e85jsn2d125e094240',
+      'X-RapidAPI-Key': '4b83f54d28msh516b2eedb96aa43p19897ajsn44ac150d3011',
       'X-RapidAPI-Host': 'virtual-try-on2.p.rapidapi.com'
     },
     body: dataSend,
@@ -39,13 +40,17 @@ function logSubmit(event) {
          result = result[key];
          const k='ouput_path_img';
          const u=result[k];
-      
+              
          console.log(u);
+         let load=document.getElementById("loader");
+  load.style.display='none';
+         document.getElementById("loader").style.display = "none";
+
         //  const ur='"'+u+'"';
         let d=document.querySelector("#res");
         d.setAttribute("src",u);
         var imageUrl =u; 
-      
+        
       });
       
         console.log("url is printed");
@@ -53,13 +58,9 @@ function logSubmit(event) {
       console.log("call request end");
   } catch (error) {
     console.error(error);
+    let er=document.getElementById("msg");
+    er.innerHTML="error in fetching";
   }
 }
 const form = document.getElementById("images");
 form.addEventListener("submit", logSubmit);
-
-
-
-
-
-

@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-       
-        .d{
-            justify-self: start;
-            align-items: center;
-            display: flex;
-            gap:60px;
-        }
-        .res{
-            align-items: center;
-            justify-content: center;
-            display: flex;
-        }
-    </style>
+    <link rel="stylesheet" href="./static/Tryon2D.css">
 </head>
+
 <body>
-    <form id="images">
-        <label for="person">Person Image</label>
-        <input name="person" id="person" width="500px" height="900px" type="file"/>
-        <label for="clothes">Clothes Image</label>
-        <input name="clothes" id="clothes" width="500px" height="900px" type="file"/>
-                <input type="submit">
-    </form>
-    <div>
-        <h2>Preview:</h2>
-        <div class="d">
-            <div class="d1">
-        <img id="personPreview" src="#" width="500px" height="900px" alt="Person Image">
+    <form id="images" class="form_img">
+        <div class="form-ele">
+            <div class="io-ele">
+                <label for="person">Person Image</label>
+                <img src="person.png" alt="" class="form-logo1">
+                <input name="person" id="person" type="file" />
+            </div>
+            <div class="d">
+                <div class="d1">
+                    <img id="personPreview" src="#" alt="Person Image"  style="max-height: 200px;">
+                </div>
+            </div>
+        </div>
+        <img src="plusimg.png" class="plus" alt="">
+        <div class="form-ele">
+            <div class="io-ele">
+                <label for="clothes">Clothes Image</label>
+                <img src="clothes.png" alt="" class="form-logo2">
+                <input name="clothes" id="clothes" type="file" />
+            </div>
+            <div class="d">
+                <div class="d2">
+                    <img id="clothesPreview" src="#" alt="Clothes Image"  style="max-height: 200px;">
+                </div>
+            </div>
+        </div>
+    <br><br>
+    <div class="submit-btn">
+        <input type="submit" id="submit" class="submit">
     </div>
-    <div class="d2">
-        <img id="clothesPreview" src="#" width="500px" height="900px" alt="Clothes Image">
+</form>
+
+    <div id="loader" class="loader" ></div>
+    <div class="res">
+        <h2>Result</h2>
+        <img id="res" alt="final" src="#">
     </div>
-    </div>
-</div>
-<div class="res">
-    <h2>Result</h2>
-    <img id="res" alt="final" src="#">
-</div>
-<script>
-    const personInput = document.getElementById('person');
-    const clothesInput = document.getElementById('clothes');
-    const personPreview = document.getElementById('personPreview');
-    const clothesPreview = document.getElementById('clothesPreview');
+    <script>
+        const personInput = document.getElementById('person');
+        const clothesInput = document.getElementById('clothes');
+        const personPreview = document.getElementById('personPreview');
+        const clothesPreview = document.getElementById('clothesPreview');
 
-    personInput.addEventListener('change', (event) => {
-        const file = event.target.files[0];
-        const reader = new FileReader();
+        personInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            const reader = new FileReader();
 
-        reader.onload = () => {
-            personPreview.src = reader.result;
-        };
+            reader.onload = () => {
+                personPreview.src = reader.result;
+            };
 
-        reader.readAsDataURL(file);
-    });
+            reader.readAsDataURL(file);
+        });
 
-    clothesInput.addEventListener('change', (event) => {
-        const file = event.target.files[0];
-        const reader = new FileReader();
+        clothesInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            const reader = new FileReader();
 
-        reader.onload = () => {
-            clothesPreview.src = reader.result;
-        };
+            reader.onload = () => {
+                clothesPreview.src = reader.result;
+            };
 
-        reader.readAsDataURL(file);
-    });
-</script>
-<script type="text/javascript" src="./static/Tryon2D.js"></script>
+            reader.readAsDataURL(file);
+        });
+
+    </script>
+    <script type="text/javascript" src="./static/Tryon2D.js"></script>
 
 </body>
 
