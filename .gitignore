@@ -1,1 +1,4 @@
+# created by virtualenv automatically
 *.pkl
+env
+__pycache__/

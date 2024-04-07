@@ -21,8 +21,6 @@ model= tensorflow.keras.Sequential([
     GlobalMaxPooling2D()
 ])
 
-st.title('Get new designed outfits')
-
 def save_uploaded_file(uploaded_file):
     try:
         with open(os.path.join('uploads',uploaded_file.name),'wb') as f:
